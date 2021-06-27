@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  justify-content: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.home__image {
+  width: 100%;
+  z-index: -1; /* to keep it behind everything else */
+  margin-bottom: -150px; /* let other elements slighly overlap from below */
+  mask-image: linear-gradient(
+    to top,
+    transparent,
+    black
+  ); /* To give the image the blurr effect  */
+  /* In mask-image property, black will be completely visible, 
+  while transparent will be comletely hidden  */
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin: 0 5px;
+}
